@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: opf-monitoring
+spec:
+  destination:
+    namespace: opf-monitoring
+    name: in-cluster
+  project: operate-first
+  source:
+    path: kfdef/monitoring/
+    repoURL: https://github.com/operate-first/odh.git
+    targetRevision: HEAD
+  syncPolicy:
+    syncOptions:
+    - Validate=false
