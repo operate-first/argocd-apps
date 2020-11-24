@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   - jupyterhub.yaml
   - monitoring.yaml
+  - superset.yaml

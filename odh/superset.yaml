@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: opf-superset
+spec:
+  destination:
+    namespace: opf-superset
+    name: in-cluster
+  project: operate-first
+  source:
+    path: kfdef/superset/
+    repoURL: https://github.com/operate-first/odh.git
+    targetRevision: HEAD
+  syncPolicy:
+    syncOptions:
+    - Validate=false
