@@ -4,3 +4,4 @@ resources:
   - jupyterhub.yaml
   - monitoring.yaml
   - superset.yaml
+  - argo.yaml
