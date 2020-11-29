@@ -1,0 +1,12 @@
+project: data-science
+source:
+  repoURL: 'https://github.com/HumairAK/super-great-data-science-project.git'
+  path: .
+  targetRevision: HEAD
+destination:
+  namespace: ds-example-project
+  name: in-cluster
+syncPolicy:
+  syncOptions:
+    - Validate=false
+    - CreateNamespace=true
