@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: opf-argo
+  name: opf-superset
 spec:
   destination:
-    namespace: opf-argo
+    namespace: opf-superset
     name: in-cluster
   project: operate-first
   source:
-    path: kfdef/argo
+    path: base/superset
     repoURL: https://github.com/operate-first/odh.git
     targetRevision: HEAD
   syncPolicy:

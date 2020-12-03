@@ -8,7 +8,7 @@ spec:
     name: in-cluster
   project: operate-first
   source:
-    path: kfdef/dashboard
+    path: base/dashboard
     repoURL: https://github.com/operate-first/odh.git
     targetRevision: HEAD
   syncPolicy:

@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: opf-datacatalog
+  name: opf-argo
 spec:
   destination:
-    namespace: opf-datacatalog
+    namespace: opf-argo
     name: in-cluster
   project: operate-first
   source:
-    path: kfdef/datacatalog
+    path: base/argo
     repoURL: https://github.com/operate-first/odh.git
     targetRevision: HEAD
   syncPolicy:
     syncOptions:
-      - Validate=false
+    - Validate=false

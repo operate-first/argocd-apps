@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: opf-superset
+  name: opf-odh-operator
 spec:
   destination:
-    namespace: opf-superset
+    namespace: opf-odh-operator
     name: in-cluster
   project: operate-first
   source:
-    path: kfdef/superset/
+    path: overlays/quicklab/operator
     repoURL: https://github.com/operate-first/odh.git
     targetRevision: HEAD
   syncPolicy:
