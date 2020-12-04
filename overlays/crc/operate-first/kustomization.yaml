@@ -10,3 +10,4 @@ patchesStrategicMerge:
   - argo.yaml
   - datacatalog.yaml
   - dashboard.yaml
+  - kafka.yaml
