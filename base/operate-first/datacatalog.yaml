@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: opf-monitoring
+  name: opf-datacatalog
 spec:
   destination:
-    namespace: opf-monitoring
+    namespace: opf-datacatalog
     name: in-cluster
   project: operate-first
   source:
-    path: kfdef/monitoring/
+    path: base/datacatalog
     repoURL: https://github.com/operate-first/odh.git
     targetRevision: HEAD
   syncPolicy:
     syncOptions:
-    - Validate=false
+      - Validate=false

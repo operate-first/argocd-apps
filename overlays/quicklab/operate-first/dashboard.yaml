@@ -1,0 +1,7 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: opf-dashboard
+spec:
+  source:
+    path: overlays/quicklab/dashboard
