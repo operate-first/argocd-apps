@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 PROJECT=$1
-declare -a ENVIRONMENTS=("moc" "quicklab")
+declare -a ENVIRONMENTS=("moc" "quicklab" "crc")
 
 if [ $# -eq 0 ]; then
     echo "usage: create-projects.sh PROJECT_NAME"
@@ -33,5 +33,8 @@ for ENV in ${ENVIRONMENTS[@]}; do
   mkdir $ENV_DIR
   pushd $ENV_DIR
   kustomize create --resources ../../../$BASE_DIR
+  popd
+  pushd overlays/$ENV/
+  kustomize edit add resource $PROJECT
   popd
 done
