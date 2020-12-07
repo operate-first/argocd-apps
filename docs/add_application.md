@@ -9,26 +9,26 @@ Please see the use-cases below and follow the instructions that best fit your ap
 - You should be familiar with [kustomize ovelrays](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/#bases-and-overlays)
 - You should be familiar with what an [ArgoCD application](https://argoproj.github.io/argo-cd/operator-manual/declarative-setup/#applications) is.
 
-# I only want to Deploy to MOC
+### I only want to Deploy to MOC
 
 Add your ArgoCD Application to `overlays/moc/$PROJECT` where `$PROJECT` correlates with your project.
 Add this resource to the `resource` field list in `overlays/moc/$PROJECT/kustomization.yaml`.
 
-# I only want to Deploy to Quicklab
+### I only want to Deploy to Quicklab
 
 Add your ArgoCD Application to `overlays/quicklab/$PROJECT` where `$PROJECT` correlates with your project.
 Add this resource to the `resource` field list in `overlays/quicklab/$PROJECT/kustomization.yaml`.
 
-# I want to be able to deploy to MOC and Quicklab
+### I want to be able to deploy to MOC and Quicklab
 
 There are 2 sub use-cases here:
 
-## I don't use overlays (one set of manifests)
+#### I don't use overlays (one set of manifests)
 
 Add your ArgoCD Application to `base/$PROJECT` where `$PROJECT` correlates with your project. It will be auto consumed
 by `moc` and `quicklab` overlays. The `path` should point to the path in your repo that contains the manifests.
 
-## I use overlays for moc and quicklab that inherit from a base
+#### I use overlays for moc and quicklab that inherit from a base
 
 The assumption here is that your manifest repository follows this structure:
 ```
