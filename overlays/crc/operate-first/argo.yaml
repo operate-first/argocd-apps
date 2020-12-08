@@ -4,4 +4,4 @@ metadata:
   name: opf-argo
 spec:
   source:
-    path: overlays/crc/argo
+    path: odh/overlays/crc/argo

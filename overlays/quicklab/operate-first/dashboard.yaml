@@ -4,4 +4,4 @@ metadata:
   name: opf-dashboard
 spec:
   source:
-    path: overlays/quicklab/dashboard
+    path: odh/overlays/quicklab/dashboard

@@ -4,4 +4,4 @@ metadata:
   name: opf-jupyterhub
 spec:
   source:
-    path: overlays/quicklab/jupyterhub
+    path: odh/overlays/quicklab/jupyterhub

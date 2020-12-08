@@ -4,4 +4,4 @@ metadata:
   name: opf-dashboard
 spec:
   source:
-    path: overlays/moc/dashboard
+    path: odh/overlays/moc/dashboard

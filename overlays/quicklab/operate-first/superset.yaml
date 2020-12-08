@@ -4,4 +4,4 @@ metadata:
   name: opf-superset
 spec:
   source:
-    path: overlays/quicklab/superset
+    path: odh/overlays/quicklab/superset

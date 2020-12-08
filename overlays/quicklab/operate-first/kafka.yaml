@@ -4,4 +4,4 @@ metadata:
   name: opf-kafka
 spec:
   source:
-    path: overlays/quicklab/kafka
+    path: odh/overlays/quicklab/kafka

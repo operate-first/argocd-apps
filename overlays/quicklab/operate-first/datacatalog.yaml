@@ -4,4 +4,4 @@ metadata:
   name: opf-datacatalog
 spec:
   source:
-    path: overlays/quicklab/datacatalog
+    path: odh/overlays/quicklab/datacatalog

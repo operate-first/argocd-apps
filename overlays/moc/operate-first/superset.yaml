@@ -4,4 +4,4 @@ metadata:
   name: opf-superset
 spec:
   source:
-    path: overlays/moc/superset
+    path: odh/overlays/moc/superset
