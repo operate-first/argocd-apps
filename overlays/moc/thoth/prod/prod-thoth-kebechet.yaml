@@ -10,7 +10,7 @@ spec:
     path: kebechet/overlays/cnv-prod
     targetRevision: master
   destination:
-    server: "https://api.cnv.massopen.cloud:6443"
+    server: "https://kubernetes.default.svc"
     namespace: thoth-backend-prod
   syncPolicy:
     automated:

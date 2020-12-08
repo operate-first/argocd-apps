@@ -10,7 +10,7 @@ spec:
     path: amun/overlays/cnv-prod/amun-api
     targetRevision: HEAD
   destination:
-    server: "https://api.cnv.massopen.cloud:6443"
+    server: "https://kubernetes.default.svc"
     namespace: thoth-amun-api-prod
   syncPolicy:
     automated:

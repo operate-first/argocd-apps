@@ -10,7 +10,7 @@ spec:
     path: management-api/overlays/cnv-prod
     targetRevision: master
   destination:
-    server: "https://api.cnv.massopen.cloud:6443"
+    server: "https://kubernetes.default.svc"
     namespace: thoth-frontend-prod
   syncPolicy:
     automated:

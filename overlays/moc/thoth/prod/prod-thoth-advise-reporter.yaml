@@ -10,7 +10,7 @@ spec:
     path: advise-reporter/overlays/cnv-prod
     targetRevision: master
   destination:
-    server: "https://api.cnv.massopen.cloud:6443"
+    server: "https://kubernetes.default.svc"
     namespace: thoth-infra-prod
   syncPolicy:
     automated:
