@@ -10,7 +10,7 @@ spec:
     path: investigator/overlays/cnv-prod
     targetRevision: HEAD
   destination:
-    server: "https://api.cnv.massopen.cloud:6443"
+    server: "https://kubernetes.default.svc"
     namespace: thoth-infra-prod
   syncPolicy:
     automated:

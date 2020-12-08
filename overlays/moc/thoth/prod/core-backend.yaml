@@ -11,7 +11,7 @@ spec:
     targetRevision: master
   destination:
     namespace: thoth-backend-prod
-    server: "https://api.cnv.massopen.cloud:6443"
+    server: "https://kubernetes.default.svc"
   syncPolicy:
     automated:
       selfHeal: true
