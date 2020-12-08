@@ -1,0 +1,20 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: prod-thoth-graph-refresh
+spec:
+  project: thoth
+  source:
+    repoURL: "https://github.com/thoth-station/thoth-application.git"
+    path: graph-refresh/overlays/cnv-prod
+    targetRevision: master
+  destination:
+    server: "https://api.cnv.massopen.cloud:6443"
+    namespace: thoth-frontend-prod
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
+    syncOptions:
+      - Validate=false
