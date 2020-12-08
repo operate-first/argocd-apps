@@ -4,4 +4,4 @@ metadata:
   name: opf-monitoring
 spec:
   source:
-    path: overlays/crc/monitoring
+    path: odh/overlays/crc/monitoring

@@ -8,8 +8,8 @@ spec:
     name: in-cluster
   project: operate-first
   source:
-    path: base/dashboard
-    repoURL: https://github.com/operate-first/odh.git
+    path: odh/base/dashboard
+    repoURL: https://github.com/operate-first/apps.git
     targetRevision: HEAD
   syncPolicy:
     syncOptions:

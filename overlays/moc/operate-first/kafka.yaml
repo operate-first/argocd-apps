@@ -4,4 +4,4 @@ metadata:
   name: opf-kafka
 spec:
   source:
-    path: overlays/moc/kafka
+    path: odh/overlays/moc/kafka

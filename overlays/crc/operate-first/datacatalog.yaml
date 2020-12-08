@@ -4,4 +4,4 @@ metadata:
   name: opf-datacatalog
 spec:
   source:
-    path: overlays/crc/datacatalog
+    path: odh/overlays/crc/datacatalog

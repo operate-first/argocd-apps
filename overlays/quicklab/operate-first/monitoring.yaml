@@ -4,4 +4,4 @@ metadata:
   name: opf-monitoring
 spec:
   source:
-    path: overlays/quicklab/monitoring
+    path: odh/overlays/quicklab/monitoring

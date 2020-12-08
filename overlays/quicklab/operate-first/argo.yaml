@@ -4,4 +4,4 @@ metadata:
   name: opf-argo
 spec:
   source:
-    path: overlays/quicklab/argo
+    path: odh/overlays/quicklab/argo
