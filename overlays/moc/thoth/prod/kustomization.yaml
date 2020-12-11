@@ -9,6 +9,7 @@ resources:
 - prod-thoth-adviser.yaml
 - prod-thoth-amun-api.yaml
 - prod-thoth-amun-inspection.yaml
+- prod-thoth-bot-sefkhet-abwy-chatbot.yaml
 - prod-thoth-chat-notification.yaml
 - prod-thoth-cve-update.yaml
 - prod-thoth-graph-refresh.yaml
