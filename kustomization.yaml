@@ -1,6 +1,0 @@
-# TODO: Remove this file once the path on moc-cnv-sandbox repo is updated to overlays/moc for agocd app-of-apps application
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-namespace: argocd
-resources:
-- overlays/moc
