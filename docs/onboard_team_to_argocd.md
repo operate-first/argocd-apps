@@ -1,13 +1,25 @@
 # ArgoCD onboarding procedure
 
-Onboarding a team requires the following steps to be taken.
+We have an ArgoCD instance deployed on MOC that can be used to deploy the application manifests located in this repo.
+
+The ArgoCD instance is deployed on [MOC CNV Sandbox](https://github.com/open-infrastructure-labs/moc-cnv-sandbox) cluster.
+
+Each team is given an [ArgoCD Project](https://argoproj.github.io/argo-cd/user-guide/projects/) that has an allow-list of clusters and namespaces to which they can deploy. They also have an allow-list of resources they can deploy within those namespaces. These restrictions exist to prevent teams from being able to use ArgoCD to deploy cluster scoped resources, or resources onto other team's namespaces.
+
+> Currently, you can only use this ArgoCD instance to deploy in-cluster, other clusters are not yet supported, please make an issue if you have this requirement.
+
+Team's are given edit access (via ui/cli console) to their ArgoCD Projects using Openshift RBAC and Openshift Groups.
+
+The following steps should be completed to fully onboard and enable a team to use ArgoCD to deploy `Applications` to their ArgoCD `Projects`.
+
+> Note: ArgoCD Projects, should not to be confused with Openshift Projects.
 
 ## Create openshift-group
 
 To add multi-tenancy support, we require the team to have an openshift group on the MOC cluster on which our ArgoCD instance resides.
 This openshift group should include all the people belonging to the team that will need write-level access to applications
 belonging to the team's ArgoCD Project (explained later). An openshift group needs to be requested by making an issue
-[here](https://gitlab.com/open-infrastructure-labs/moc-cnv-sandbox/-/issues).
+[here](https://github.com/open-infrastructure-labs/moc-cnv-sandbox/issues).
 
 ## Create project directories for this repository
 To create the project directories, use the the following script provided:
@@ -18,14 +30,15 @@ To create the project directories, use the the following script provided:
 
 This will create the necessary folders/files that respects the project structure of this repository.
 
-Teams should be directed [here](add_application.md) for instructions on how to structure their ArgoCD Applications.
-All Applications should go in the team's [ArgoCD Project](https://argoproj.github.io/argo-cd/user-guide/projects/),
+Teams should be directed [here](add_application.md) for instructions on how to create their ArgoCD Applications.
+All Applications should be pointed to the team's [ArgoCD Project](https://argoproj.github.io/argo-cd/user-guide/projects/)
+(i.e. the `project` field in the ArgoCD [Aplication](https://argoproj.github.io/argo-cd/operator-manual/declarative-setup/#applications) manifest),
 see below for instructions on adding an ArgoCD Project.
 
-## ArgoCD Project
+## Create the ArgoCD Project
 The team will need a dedicated [ArgoCD Project](https://argoproj.github.io/argo-cd/user-guide/projects/) for their
 [ArgoCD Applications](https://argoproj.github.io/argo-cd/operator-manual/declarative-setup/#applications). The
-ArgoCD project should be added [here](https://gitlab.com/open-infrastructure-labs/moc-cnv-sandbox/-/tree/master/manifests/argocd/overlays/prod/projects).
+ArgoCD project should be added [here](https://github.com/open-infrastructure-labs/moc-cnv-sandbox/tree/master/manifests/argocd/overlays/prod/projects).
 
 A typical project will look like the following:
 
@@ -71,15 +84,16 @@ help diagnose issues.
 * `namespaceResourceWhitelist` generally contains the list of resources a project `admin` has access to. The general idea
 is that a team should be able to deploy via ArgoCD what they can deploy using `oc apply`. See other projects for a list of
 such resources.
-* Ensure that the argocd project is included in the `kustomization.yaml` [here](https://gitlab.com/open-infrastructure-labs/moc-cnv-sandbox/-/blob/master/manifests/argocd/overlays/prod/projects/kustomization.yaml).
+* Ensure that the argocd project is included in the `kustomization.yaml` [here](https://github.com/open-infrastructure-labs/moc-cnv-sandbox/blob/master/manifests/argocd/overlays/prod/projects/kustomization.yaml).
 
-## Enable openshift auth to ArgoCD Console
+## Enable Openshift auth to ArgoCD Console
 By default all users should be able to see the [ArgoCD console](https://argocd-server-aicoe-argocd.apps.ocp4.prod.psi.redhat.com).
 To be able to make changes to applications belonging to the team's ArgoCD Project (via the cli or ui), the team will need
 to be able to log into the console with appropriate access. This accomplished by adding the team's openshift group
-mentioned in the beginning under the dex config [here](https://gitlab.com/open-infrastructure-labs/moc-cnv-sandbox/-/blob/master/manifests/argocd/overlays/prod/configs/argo_cm/dex.config#L11).
+mentioned in the beginning under the dex config [here](https://github.com/open-infrastructure-labs/moc-cnv-sandbox/blob/master/manifests/argocd/overlays/prod/configs/argo_cm/dex.config).
 
-### Additional Notes:
+
+## Additional Notes:
 
 ### Namespace Prefix
 An ArgoCD project allows us to ensure that a team cannot deploy applications onto another team's namespace via ArgoCD.
