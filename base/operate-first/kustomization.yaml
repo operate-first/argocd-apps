@@ -8,3 +8,4 @@ resources:
   - datacatalog.yaml
   - dashboard.yaml
   - kafka.yaml
+  - observatorium.yaml
