@@ -10,3 +10,4 @@ patchesStrategicMerge:
   - dashboard.yaml
   - datacatalog.yaml
   - kafka.yaml
+  - observatorium.yaml
