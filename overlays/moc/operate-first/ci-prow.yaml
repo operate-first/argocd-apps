@@ -4,7 +4,7 @@ kind: Application
 metadata:
   name: ci-prow-cluster-admin
 spec:
-  project: opf
+  project: operate-first
   source:
     path: prow/overlays/cluster-admin
     repoURL: "https://github.com/thoth-station/thoth-application.git"
@@ -24,7 +24,7 @@ kind: Application
 metadata:
   name: ci-prow-prod
 spec:
-  project: opf
+  project: operate-first
   source:
     path: prow/overlays/cnv-prod
     repoURL: "https://github.com/thoth-station/thoth-application.git"
