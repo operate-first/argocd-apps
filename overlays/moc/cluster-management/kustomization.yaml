@@ -4,3 +4,4 @@ resources:
 - ../../../base/cluster-management
 patchesStrategicMerge:
 - cluster-resources.yaml
+- argocd-projects.yaml
