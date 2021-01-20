@@ -2,6 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
   - ../../../base/operate-first
+  - ci-prow.yaml
 patchesStrategicMerge:
   - jupyterhub.yaml
   - monitoring.yaml
@@ -11,4 +12,3 @@ patchesStrategicMerge:
   - datacatalog.yaml
   - kafka.yaml
   - observatorium.yaml
-  - ci-prow.yaml
