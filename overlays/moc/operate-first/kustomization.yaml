@@ -11,3 +11,4 @@ patchesStrategicMerge:
   - datacatalog.yaml
   - kafka.yaml
   - observatorium.yaml
+  - ci-prow.yaml
