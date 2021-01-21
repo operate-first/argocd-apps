@@ -10,7 +10,7 @@ spec:
     targetRevision: HEAD
     # path: implement in an overlay
   destination:
-    server: in-cluster
+    name: in-cluster
     namespace: argocd
   syncPolicy:
     syncOptions:
