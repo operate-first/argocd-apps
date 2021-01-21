@@ -2,26 +2,6 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ci-prow-cluster-admin
-spec:
-  project: operate-first
-  source:
-    path: prow/overlays/cluster-admin
-    repoURL: "https://github.com/thoth-station/thoth-application.git"
-    targetRevision: master
-  destination:
-    namespace: opf-ci-prow
-    server: "https://kubernetes.default.svc"
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
-    syncOptions:
-      - Validate=false
----
-apiVersion: argoproj.io/v1alpha1
-kind: Application
-metadata:
   name: ci-prow-prod
 spec:
   project: operate-first
