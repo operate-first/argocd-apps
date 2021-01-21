@@ -7,3 +7,4 @@ resources:
 - thoth
 - rekor
 - cluster-management
+- mesh-for-data
