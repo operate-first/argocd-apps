@@ -7,7 +7,7 @@ spec:
   project: thoth
   source:
     repoURL: "https://github.com/thoth-station/elyra-aidevsecops-tutorial.git"
-    path: elyra-aidevsecops-tutorial/manifests/overlays/test
+    path: manifests/overlays/test
     targetRevision: master
   destination:
     server: "https://kubernetes.default.svc"
