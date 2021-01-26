@@ -23,9 +23,9 @@ spec:
       kind: CronJob
       name: new-label-normalizer-aicoe
       jsonPointers:
-        - /spec/template/spec/containers/0/image
+        - /spec/jobTemplate/spec/template/spec/containers/0/image
     - group: batch
       kind: CronJob
       name: new-label-normalizer-thoth-station
       jsonPointers:
-        - /spec/template/spec/containers/0/image
+        - /spec/jobTemplate/spec/template/spec/containers/0/image
