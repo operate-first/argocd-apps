@@ -17,9 +17,12 @@ resources:
 - prod-thoth-graph-sync-backend.yaml
 - prod-thoth-graph-sync-middletier.yaml
 - prod-thoth-investigator.yaml
+- prod-thoth-kebechet.yaml
 - prod-thoth-management-api.yaml
 - prod-thoth-metrics-exporter.yaml
 - prod-thoth-package-extract.yaml
+- prod-thoth-qeb-hwt.yaml
 - prod-thoth-security-indicators.yaml
+- prod-thoth-sefkhet-abwy.yaml
 - prod-thoth-solver.yaml
 - prod-thoth-user-api.yaml
