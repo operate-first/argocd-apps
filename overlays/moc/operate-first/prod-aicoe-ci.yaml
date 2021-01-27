@@ -1,0 +1,18 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: prod-aicoe-ci
+spec:
+  project: operate-first
+  source:
+    repoURL: 'https://github.com/AICoE/aicoe-ci.git'
+    path: manifests/overlays/moc
+    targetRevision: master
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: opf-ci-pipelines
+  syncPolicy:
+    automated: {}
+    syncOptions:
+      - Validate=false
