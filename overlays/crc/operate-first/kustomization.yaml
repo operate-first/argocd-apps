@@ -12,3 +12,4 @@ patchesStrategicMerge:
   - dashboard.yaml
   - kafka.yaml
   - observatorium.yaml
+  - cluster-logging.yaml
