@@ -24,5 +24,6 @@ resources:
 - prod-thoth-qeb-hwt.yaml
 - prod-thoth-security-indicators.yaml
 - prod-thoth-sefkhet-abwy.yaml
+- prod-thoth-slo-reporter.yaml
 - prod-thoth-solver.yaml
 - prod-thoth-user-api.yaml
