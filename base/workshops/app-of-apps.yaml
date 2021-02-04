@@ -1,0 +1,20 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ml-prague-app-of-apps
+spec:
+  project: argocd
+  source:
+    path: ml-prague-2021
+    repoURL: https://github.com/operate-first/workshop-apps.git
+    targetRevision: HEAD
+  destination:
+    namespace: argocd
+    server: "https://kubernetes.default.svc"
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
+    syncOptions:
+      - Validate=false
