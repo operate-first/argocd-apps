@@ -4,7 +4,7 @@ kind: Application
 metadata:
   name: ml-prague-app-of-apps
 spec:
-  project: argocd
+  project: operate-first
   source:
     path: ml-prague-2021
     repoURL: https://github.com/operate-first/workshop-apps.git
