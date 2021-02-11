@@ -4,6 +4,7 @@ resources:
   - ../../../base/operate-first
 patchesStrategicMerge:
   - argo.yaml
+  - auth.yaml
   - ci-prow.yaml
   - cluster-logging.yaml
   - dashboard.yaml

@@ -4,12 +4,13 @@ resources:
   - ../../../base/operate-first
   - odh-operator.yaml
 patchesStrategicMerge:
-  - jupyterhub.yaml
-  - monitoring.yaml
-  - superset.yaml
   - argo.yaml
-  - datacatalog.yaml
-  - dashboard.yaml
-  - kafka.yaml
-  - observatorium.yaml
+  - auth.yaml
   - cluster-logging.yaml
+  - dashboard.yaml
+  - datacatalog.yaml
+  - jupyterhub.yaml
+  - kafka.yaml
+  - monitoring.yaml
+  - observatorium.yaml
+  - superset.yaml
