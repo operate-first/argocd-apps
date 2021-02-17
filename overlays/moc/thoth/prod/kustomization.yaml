@@ -6,6 +6,7 @@ resources:
 - core-graph.yaml
 - core-infra.yaml
 - core-middletier.yaml
+- prod-thoth-advise-reporter.yaml
 - prod-thoth-adviser.yaml
 - prod-thoth-amun-api.yaml
 - prod-thoth-amun-inspection.yaml
@@ -20,7 +21,10 @@ resources:
 - prod-thoth-kebechet.yaml
 - prod-thoth-management-api.yaml
 - prod-thoth-metrics-exporter.yaml
+- prod-thoth-mi.yaml
 - prod-thoth-package-extract.yaml
+- prod-thoth-package-releases.yaml
+- prod-thoth-package-update.yaml
 - prod-thoth-qeb-hwt.yaml
 - prod-thoth-security-indicators.yaml
 - prod-thoth-sefkhet-abwy.yaml
