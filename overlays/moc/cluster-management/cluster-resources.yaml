@@ -6,3 +6,14 @@ metadata:
 spec:
   source:
     path: cluster-scope/overlays/moc/
+  ignoreDifferences:
+    - group: imageregistry.operator.openshift.io
+      kind: Config
+      name: cluster
+      version: v1
+      jsonPointers:
+        - /spec/defaultRoute
+        - /spec/httpSecret
+        - /spec/proxy
+        - /spec/requests
+        - /spec/rolloutStrategy
