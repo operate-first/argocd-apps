@@ -3,3 +3,6 @@ kind: Kustomization
 resources:
   - ../../../base/data-science
   - black-flake.yml
+
+patchesStrategicMerge:
+  - mailing-list-analysis-toolkit.yaml

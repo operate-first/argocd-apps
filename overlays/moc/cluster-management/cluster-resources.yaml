@@ -4,6 +4,8 @@ kind: Application
 metadata:
   name: cluster-resources
 spec:
+  destination:
+    name: moc-cnv
   source:
     path: cluster-scope/overlays/moc/
   ignoreDifferences:

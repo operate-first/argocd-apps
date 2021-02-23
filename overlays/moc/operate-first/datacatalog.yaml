@@ -3,5 +3,7 @@ kind: Application
 metadata:
   name: opf-datacatalog
 spec:
+  destination:
+    name: moc-cnv
   source:
     path: odh/overlays/moc/datacatalog

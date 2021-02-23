@@ -3,5 +3,7 @@ kind: Application
 metadata:
   name: opf-dashboard
 spec:
+  destination:
+    name: moc-cnv
   source:
     path: odh/overlays/moc/dashboard

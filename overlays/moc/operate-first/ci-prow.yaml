@@ -10,8 +10,8 @@ spec:
     repoURL: "https://github.com/thoth-station/thoth-application.git"
     targetRevision: master
   destination:
+    name: moc-cnv
     namespace: opf-ci-prow
-    server: "https://kubernetes.default.svc"
   syncPolicy:
     automated:
       prune: true

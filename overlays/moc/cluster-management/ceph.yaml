@@ -4,5 +4,7 @@ kind: Application
 metadata:
   name: ceph
 spec:
+  destination:
+    name: moc-cnv
   source:
     path: ceph/overlays/moc/

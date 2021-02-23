@@ -10,7 +10,7 @@ spec:
     path: manifests/overlays/test
     targetRevision: master
   destination:
-    server: "https://kubernetes.default.svc"
+    name: moc-cnv
     namespace: thoth-deployment-examples
   syncPolicy:
     automated:

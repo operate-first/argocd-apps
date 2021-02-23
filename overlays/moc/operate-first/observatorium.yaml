@@ -3,5 +3,7 @@ kind: Application
 metadata:
   name: opf-observatorium
 spec:
+  destination:
+    name: moc-cnv
   source:
     path: observatorium/overlays/moc/
