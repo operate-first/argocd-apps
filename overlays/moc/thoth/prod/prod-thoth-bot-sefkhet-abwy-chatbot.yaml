@@ -10,7 +10,7 @@ spec:
     path: sefkhet-abwy-chatbot/overlays/cnv-prod
     targetRevision: master
   destination:
-    server: "https://kubernetes.default.svc"
+    name: moc-cnv
     namespace: thoth-bots-prod
   syncPolicy:
     automated:

@@ -4,5 +4,7 @@ kind: Application
 metadata:
   name: kubevirt-hyperconverged
 spec:
+  destination:
+    name: moc-cnv
   source:
     path: kubevirt-hyperconverged/overlays/moc/

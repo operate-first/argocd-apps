@@ -11,7 +11,7 @@ spec:
     targetRevision: master
   destination:
     namespace: thoth-middletier-prod
-    server: "https://kubernetes.default.svc"
+    name: moc-cnv
   syncPolicy:
     automated:
       prune: true

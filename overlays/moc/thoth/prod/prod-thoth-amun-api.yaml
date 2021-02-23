@@ -10,7 +10,7 @@ spec:
     path: amun/overlays/cnv-prod/amun-api
     targetRevision: HEAD
   destination:
-    server: "https://kubernetes.default.svc"
+    name: moc-cnv
     namespace: thoth-amun-api-prod
   syncPolicy:
     automated:

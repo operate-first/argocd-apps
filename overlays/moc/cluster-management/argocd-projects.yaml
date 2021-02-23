@@ -4,8 +4,8 @@ metadata:
   name: argocd-projects
 spec:
   destination:
+    name: moc-cnv
     namespace: argocd
-    name: in-cluster
   project: default
   source:
     path: manifests/overlays/moc-cnv/projects

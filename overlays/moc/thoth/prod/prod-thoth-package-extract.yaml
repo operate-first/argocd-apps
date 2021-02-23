@@ -10,7 +10,7 @@ spec:
     path: package-extract/overlays/cnv-prod
     targetRevision: master
   destination:
-    server: "https://kubernetes.default.svc"
+    name: moc-cnv
     namespace: thoth-middletier-prod
   syncPolicy:
     automated:

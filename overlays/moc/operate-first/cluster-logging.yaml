@@ -4,6 +4,8 @@ kind: Application
 metadata:
   name: cluster-logging
 spec:
+  destination:
+    name: moc-cnv
   source:
     path: cluster-logging/overlays/moc/
   syncPolicy:

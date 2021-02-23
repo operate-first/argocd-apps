@@ -10,7 +10,7 @@ spec:
     path: advise-reporter/overlays/cnv-prod
     targetRevision: master
   destination:
-    server: "https://kubernetes.default.svc"
+    name: moc-cnv
     namespace: thoth-infra-prod
   syncPolicy:
     automated:

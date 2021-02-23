@@ -4,8 +4,8 @@ metadata:
   name: black-flake
 spec:
   destination:
+    name: moc-cnv
     namespace: ds-black-flake
-    name: in-cluster
   project: data-science
   source:
     repoURL: https://github.com/aicoe-aiops/ocp-ci-analysis.git

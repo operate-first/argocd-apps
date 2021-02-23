@@ -4,5 +4,7 @@ kind: Application
 metadata:
   name: local-storage
 spec:
+  destination:
+    name: moc-cnv
   source:
     path: local-storage/overlays/moc/

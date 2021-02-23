@@ -3,5 +3,7 @@ kind: Application
 metadata:
   name: opf-jupyterhub
 spec:
+  destination:
+    name: moc-cnv
   source:
     path: odh/overlays/moc/jupyterhub
