@@ -12,7 +12,6 @@ spec:
     - group: imageregistry.operator.openshift.io
       kind: Config
       name: cluster
-      version: v1
       jsonPointers:
         - /spec/defaultRoute
         - /spec/httpSecret
