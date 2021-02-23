@@ -4,7 +4,7 @@ metadata:
   name: argocd-projects
 spec:
   destination:
-    name: moc-cnv
+    name: moc-infra
     namespace: argocd
   project: default
   source:
