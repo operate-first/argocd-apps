@@ -8,7 +8,7 @@ spec:
     namespace: argocd
   project: default
   source:
-    path: manifests/overlays/moc-cnv/projects
+    path: manifests/overlays/moc-base/projects
     repoURL: https://github.com/operate-first/continuous-deployment.git
     targetRevision: HEAD
   syncPolicy:
