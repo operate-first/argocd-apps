@@ -3,4 +3,4 @@ A repository to store Operate-First ArgoCD Applications.  This repository's prim
 
 For ArgoCD access, please check out our onboarding docs [here](https://github.com/operate-first/support/tree/main/docs).
 
-ArgoCD can be accessed [here](https://argocd-server-argocd.apps.cnv.massopen.cloud/applications).
+ArgoCD can be accessed [here](https://argocd-server-argocd.apps.moc-infra.massopen.cloud/).
