@@ -1,4 +1,3 @@
-# script `./test-kustomize-build` is contained in the thoth-application/ repo not the opf-toolbox
 presubmits:
   - name: kustomize-build
     decorate: true
@@ -8,9 +7,9 @@ presubmits:
     context: aicoe-ci/prow/kustomize-build
     spec:
       containers:
-        - image: quay.io/operate-first/opf-toolbox:v0.2.0
+        - image: quay.io/operate-first/opf-toolbox:v0.3.2
           command:
-            - "./test-kustomize-build"
+            - "test-kustomize-build"
           resources:
             requests:
               memory: "256Mi"
