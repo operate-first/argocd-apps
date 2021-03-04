@@ -1,0 +1,20 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: opf-argo
+spec:
+  destination:
+    name: moc-cnv
+    namespace: opf-argo
+  project: operate-first
+  source:
+    path: odh/overlays/moc/zero/argo
+    repoURL: https://github.com/operate-first/apps.git
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - Validate=false

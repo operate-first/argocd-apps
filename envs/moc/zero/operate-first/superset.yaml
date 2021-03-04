@@ -1,0 +1,20 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: opf-superset
+spec:
+  destination:
+    name: moc-cnv
+    namespace: opf-superset
+  project: operate-first
+  source:
+    path: odh/overlays/moc/zero/superset
+    repoURL: https://github.com/operate-first/apps.git
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - Validate=false
