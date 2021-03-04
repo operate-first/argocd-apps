@@ -1,7 +1,0 @@
-apiVersion: argoproj.io/v1alpha1
-kind: Application
-metadata:
-  name: opf-argo
-spec:
-  source:
-    path: odh/overlays/quicklab/argo
