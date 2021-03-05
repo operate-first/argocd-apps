@@ -10,7 +10,7 @@ spec:
     path: package-extract/overlays/cnv-prod
     targetRevision: master
   destination:
-    name: moc-cnv
+    name: moc-zero
     namespace: thoth-middletier-prod
   syncPolicy:
     automated:

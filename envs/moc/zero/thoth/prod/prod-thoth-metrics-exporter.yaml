@@ -10,7 +10,7 @@ spec:
     path: metrics-exporter/overlays/cnv-prod
     targetRevision: HEAD
   destination:
-    name: moc-cnv
+    name: moc-zero
     namespace: thoth-infra-prod
   syncPolicy:
     automated:

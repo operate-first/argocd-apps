@@ -5,7 +5,7 @@ metadata:
   name: opf-monitoring
 spec:
   destination:
-    name: moc-cnv
+    name: moc-zero
     namespace: opf-monitoring
   project: operate-first
   source:

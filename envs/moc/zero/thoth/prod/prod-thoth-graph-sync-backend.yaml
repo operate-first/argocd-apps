@@ -10,7 +10,7 @@ spec:
     path: graph-sync/overlays/cnv-prod
     targetRevision: master
   destination:
-    name: moc-cnv
+    name: moc-zero
     namespace: thoth-backend-prod
   syncPolicy:
     automated:

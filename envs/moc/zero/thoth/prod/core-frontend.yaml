@@ -11,7 +11,7 @@ spec:
     targetRevision: master
   destination:
     namespace: thoth-frontend-prod
-    name: moc-cnv
+    name: moc-zero
   syncPolicy:
     automated:
       selfHeal: true

@@ -5,7 +5,7 @@ metadata:
   name: prod-aicoe-ci
 spec:
   destination:
-    name: moc-cnv
+    name: moc-zero
     namespace: opf-ci-pipelines
   project: operate-first
   source:

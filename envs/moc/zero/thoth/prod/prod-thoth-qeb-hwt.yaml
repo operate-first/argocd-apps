@@ -10,7 +10,7 @@ spec:
     path: qeb-hwt-github-app/overlays/cnv-prod
     targetRevision: HEAD
   destination:
-    name: moc-cnv
+    name: moc-zero
     namespace: thoth-frontend-prod
   syncPolicy:
     automated:
