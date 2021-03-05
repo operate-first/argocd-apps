@@ -8,7 +8,7 @@ This repo contains all Operate First ArgoCD [Applications](https://argoproj.gith
 - You should be familiar with what an [ArgoCD application](https://argoproj.github.io/argo-cd/operator-manual/declarative-setup/#applications) is.
 - You or your team should have been onboarded to ArgoCD, and have an ArgoCD project created. If you do not have one please request one for your team by filing this [issue here.](https://github.com/operate-first/support/issues/new?assignees=&labels=onboarding&template=onboarding_argocd.md&title=)
 
-### Create an Application that deploys to a cluster 
+### Create an Application that deploys to a cluster
 
 All our `clusters` belong to some `environment`. The list of our `environments` can be found [here](https://github.com/operate-first/argocd-apps/tree/main/envs). Within each `environment` you will find a list of clusters. For example within `moc` environment, you will find clusters `infra` and `zero`. Pick one such cluster that you would like to deploy to. Assume you would like to deploy to cluster called `${CLUSTER_NAME}` in environment `${ENV}`. Then follow these steps:
 
