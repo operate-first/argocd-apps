@@ -4,3 +4,4 @@ resources:
   - acm.yaml
   - argocd-projects.yaml
   - cluster-resources.yaml
+  - kubevirt-hyperconverged.yaml
