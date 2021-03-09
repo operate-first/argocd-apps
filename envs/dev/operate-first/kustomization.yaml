@@ -10,3 +10,4 @@ resources:
   - monitoring.yaml
   - observatorium.yaml
   - superset.yaml
+  - kubeflow.yaml
