@@ -5,7 +5,7 @@ metadata:
   name: opf-datacatalog
 spec:
   destination:
-    name: moc-cnv
+    name: zero
     namespace: opf-datacatalog
   project: operate-first
   source:

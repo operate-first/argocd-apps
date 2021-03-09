@@ -5,7 +5,7 @@ metadata:
   name: opf-dashboard
 spec:
   destination:
-    name: moc-cnv
+    name: zero
     namespace: opf-dashboard
   project: operate-first
   source:

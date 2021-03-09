@@ -10,7 +10,7 @@ spec:
     path: chat-notification/overlays/cnv-prod
     targetRevision: master
   destination:
-    name: moc-cnv
+    name: zero
     namespace: thoth-infra-prod
   syncPolicy:
     automated:

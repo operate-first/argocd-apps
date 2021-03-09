@@ -4,7 +4,7 @@ metadata:
   name: black-flake
 spec:
   destination:
-    name: moc-cnv
+    name: zero
     namespace: ds-black-flake
   project: data-science
   source:

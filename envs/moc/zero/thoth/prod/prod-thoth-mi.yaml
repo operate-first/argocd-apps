@@ -10,7 +10,7 @@ spec:
     path: mi-scheduler/overlays/cnv-prod
     targetRevision: master
   destination:
-    name: moc-cnv
+    name: zero
     namespace: thoth-middletier-prod
   syncPolicy:
     automated:

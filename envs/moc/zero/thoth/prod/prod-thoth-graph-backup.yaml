@@ -10,7 +10,7 @@ spec:
     path: graph-backup-job/overlays/cnv-prod
     targetRevision: master
   destination:
-    name: moc-cnv
+    name: zero
     namespace: thoth-frontend-prod
   syncPolicy:
     automated:

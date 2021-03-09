@@ -5,7 +5,7 @@ metadata:
   name: opf-argo
 spec:
   destination:
-    name: moc-cnv
+    name: zero
     namespace: opf-argo
   project: operate-first
   source:
