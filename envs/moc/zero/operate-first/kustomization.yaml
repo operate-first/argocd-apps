@@ -12,3 +12,4 @@ resources:
   - observatorium.yaml
   - prod-aicoe-ci.yaml
   - superset.yaml
+  - kubeflow.yaml
