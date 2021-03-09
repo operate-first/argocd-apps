@@ -10,7 +10,7 @@ spec:
     path: user-api/overlays/cnv-prod
     targetRevision: master
   destination:
-    name: moc-zero
+    name: zero
     namespace: thoth-frontend-prod
   syncPolicy:
     automated:

@@ -5,7 +5,7 @@ metadata:
   name: mailing-list-analysis-toolkit
 spec:
   destination:
-    name: moc-zero
+    name: zero
     namespace: opf-argo
   project: data-science
   source:

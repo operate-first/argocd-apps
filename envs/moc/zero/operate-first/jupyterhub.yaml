@@ -5,7 +5,7 @@ metadata:
   name: opf-jupyterhub
 spec:
   destination:
-    name: moc-zero
+    name: zero
     namespace: opf-jupyterhub
   project: operate-first
   source:

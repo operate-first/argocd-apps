@@ -5,7 +5,7 @@ metadata:
   name: ceph
 spec:
   destination:
-    name: moc-zero
+    name: zero
     namespace: argocd
   project: cluster-management
   source:

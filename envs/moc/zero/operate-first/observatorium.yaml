@@ -5,7 +5,7 @@ metadata:
   name: opf-observatorium
 spec:
   destination:
-    name: moc-zero
+    name: zero
     namespace: opf-observatorium
   project: operate-first
   source:

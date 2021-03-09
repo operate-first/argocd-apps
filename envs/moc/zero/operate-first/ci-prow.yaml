@@ -5,7 +5,7 @@ metadata:
   name: ci-prow-prod
 spec:
   destination:
-    name: moc-zero
+    name: zero
     namespace: opf-ci-prow
   ignoreDifferences:
   - group: apps

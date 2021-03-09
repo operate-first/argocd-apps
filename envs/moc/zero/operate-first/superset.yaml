@@ -5,7 +5,7 @@ metadata:
   name: opf-superset
 spec:
   destination:
-    name: moc-zero
+    name: zero
     namespace: opf-superset
   project: operate-first
   source:

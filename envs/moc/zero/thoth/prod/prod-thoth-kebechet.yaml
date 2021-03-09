@@ -10,7 +10,7 @@ spec:
     path: kebechet/overlays/cnv-prod
     targetRevision: master
   destination:
-    name: moc-zero
+    name: zero
     namespace: thoth-backend-prod
   syncPolicy:
     automated:

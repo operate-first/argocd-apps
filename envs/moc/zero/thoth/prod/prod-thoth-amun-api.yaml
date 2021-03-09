@@ -10,7 +10,7 @@ spec:
     path: amun/overlays/cnv-prod/amun-api
     targetRevision: HEAD
   destination:
-    name: moc-zero
+    name: zero
     namespace: thoth-amun-api-prod
   syncPolicy:
     automated:

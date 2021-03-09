@@ -10,7 +10,7 @@ spec:
     path: sefkhet-abwy-chatbot/overlays/cnv-prod
     targetRevision: master
   destination:
-    name: moc-zero
+    name: zero
     namespace: thoth-bots-prod
   syncPolicy:
     automated:

@@ -5,7 +5,7 @@ metadata:
   name: cluster-resources
 spec:
   destination:
-    name: moc-zero
+    name: zero
     namespace: argocd
   ignoreDifferences:
   - group: imageregistry.operator.openshift.io

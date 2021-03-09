@@ -11,7 +11,7 @@ spec:
     targetRevision: master
   destination:
     namespace: thoth-middletier-prod
-    name: moc-zero
+    name: zero
   syncPolicy:
     automated:
       prune: true
