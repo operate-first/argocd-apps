@@ -10,6 +10,7 @@ resources:
   - kafka.yaml
   - monitoring.yaml
   - observatorium.yaml
+  - observatorium-operator.yaml
   - prod-aicoe-ci.yaml
   - superset.yaml
   - kubeflow.yaml
