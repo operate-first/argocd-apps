@@ -14,6 +14,7 @@ resources:
 - prod-thoth-chat-notification.yaml
 - prod-thoth-cve-update.yaml
 - prod-thoth-elyra-aidevsecops-tutorial.yaml
+- prod-thoth-graph-backup.yaml
 - prod-thoth-graph-refresh.yaml
 - prod-thoth-graph-sync-backend.yaml
 - prod-thoth-graph-sync-middletier.yaml
@@ -28,6 +29,5 @@ resources:
 - prod-thoth-qeb-hwt.yaml
 - prod-thoth-security-indicators.yaml
 - prod-thoth-sefkhet-abwy.yaml
-- prod-thoth-slo-reporter.yaml
 - prod-thoth-solver.yaml
 - prod-thoth-user-api.yaml
