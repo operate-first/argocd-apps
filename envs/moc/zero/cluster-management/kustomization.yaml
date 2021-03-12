@@ -6,3 +6,5 @@ resources:
   - cluster-resources.yaml
   - kubevirt-hyperconverged.yaml
   - local-storage.yaml
+
+nameSuffix: -zero
