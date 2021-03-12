@@ -4,7 +4,7 @@ metadata:
   name: alertreceiver-zero
 spec:
   destination:
-    name: moc-infra
+    name: zero
     namespace: opf-alertreceiver
   project: cluster-management
   source:
