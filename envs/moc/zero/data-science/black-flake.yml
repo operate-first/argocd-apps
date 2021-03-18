@@ -12,8 +12,5 @@ spec:
     repoURL: https://github.com/aicoe-aiops/ocp-ci-analysis.git
     targetRevision: master
   syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
     syncOptions:
     - Validate=false
