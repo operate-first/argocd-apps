@@ -6,7 +6,7 @@ metadata:
 spec:
   destination:
     name: zero
-    namespace: openshift-operators
+    namespace: opendatahub-operator
   project: operate-first
   source:
     path: odh-operator/overlays/moc/zero
