@@ -9,7 +9,6 @@ resources:
   - datacatalog.yaml
   - jupyterhub.yaml
   - kafka.yaml
-  - kfdefs.yaml
   - monitoring.yaml
   - observatorium.yaml
   - observatorium-operator.yaml
