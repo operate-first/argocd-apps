@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: cluster-resources-infra
+  name: cluster-resources
 spec:
   destination:
     name: moc-infra

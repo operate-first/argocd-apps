@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: alertreceiver-zero
+  name: alertreceiver
 spec:
   destination:
     name: zero

@@ -8,3 +8,5 @@ resources:
   - knative.yaml
   - kubevirt-hyperconverged.yaml
   - local-storage.yaml
+
+nameSuffix: -zero
