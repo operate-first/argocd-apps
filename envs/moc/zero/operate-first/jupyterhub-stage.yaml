@@ -1,0 +1,18 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: opf-jupyterhub-stage
+spec:
+  destination:
+    name: zero
+    namespace: opf-jupyterhub-stage
+  project: operate-first
+  source:
+    path: odh/overlays/moc/zero/jupyterhub-stage
+    repoURL: https://github.com/operate-first/apps.git
+    targetRevision: HEAD
+  syncPolicy:
+    automated: {}
+    syncOptions:
+    - Validate=false
