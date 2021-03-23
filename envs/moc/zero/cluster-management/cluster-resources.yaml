@@ -6,7 +6,7 @@ metadata:
 spec:
   destination:
     name: zero
-    namespace: argocd
+    namespace: open-cluster-management-agent
   ignoreDifferences:
   - group: imageregistry.operator.openshift.io
     jsonPointers:
