@@ -5,7 +5,7 @@ metadata:
 spec:
   destination:
     name: moc-infra
-    namespace: argocd
+    namespace: open-cluster-management-agent
   project: cluster-management
   source:
     path: cluster-scope/overlays/moc/infra
