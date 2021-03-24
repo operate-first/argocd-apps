@@ -3,6 +3,7 @@ kind: Kustomization
 resources:
   - argo.yaml
   - auth.yaml
+  - ci-prow-test-pods.yaml
   - ci-prow.yaml
   - cluster-logging.yaml
   - dashboard.yaml
