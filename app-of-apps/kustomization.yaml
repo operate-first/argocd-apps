@@ -5,3 +5,4 @@ resources:
   - app-of-apps-curator.yaml
   - app-of-apps-infra.yaml
   - app-of-apps-zero.yaml
+  - workshops
