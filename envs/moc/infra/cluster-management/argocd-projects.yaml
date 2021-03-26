@@ -8,8 +8,8 @@ spec:
     namespace: argocd
   project: default
   source:
-    path: manifests/overlays/moc-infra/projects
-    repoURL: https://github.com/operate-first/continuous-deployment.git
+    path: argocd/overlays/moc-infra/projects
+    repoURL: https://github.com/operate-first/apps.git
     targetRevision: HEAD
   syncPolicy:
     automated:
