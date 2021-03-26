@@ -11,9 +11,3 @@ spec:
     path: ml-prague-2021
     repoURL: https://github.com/operate-first/workshop-apps.git
     targetRevision: HEAD
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
-    syncOptions:
-    - Validate=false
