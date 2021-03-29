@@ -3,13 +3,13 @@
 Once a team has been onboarded to ArgoCD on MOC. They may request additional permissions for their ArgoCD Project. For example, a team
 may request permissions to deploy a custom resource, but lack the permissions to do so.
 
-Permissions for all projects can be found [here](https://github.com/operate-first/continuous-deployment/tree/master/manifests/overlays/moc-infra/projects).
+Permissions for all projects can be found [here][1].
 
-All projects inherit permissions from the [global project](https://github.com/operate-first/continuous-deployment/blob/master/manifests/overlays/moc-infra/projects/global_project.yaml).
+All projects inherit permissions from the [global project][2].
 
 In general if one project requires additional permissions, then we extend that privilege to other projects, as such we advise just adding to the global project. To do this, simply edit the `global_project.yaml` and add the resource under `namespaceResourceWhitelist`.
 
-For example, to give a project permissions to deploy Argo `Workflows` add the following to `global_project.yaml` located [here](https://github.com/operate-first/continuous-deployment/blob/master/manifests/overlays/moc-infra/projects/global_project.yaml#L6):
+For example, to give a project permissions to deploy Argo `Workflows` add the following to `global_project.yaml` located [here][3]:
 
 ```yaml
 namespaceResourceWhitelist:
@@ -22,3 +22,7 @@ namespaceResourceWhitelist:
 ```
 
 You can also add these permissions to the specific project yaml, if for some reason it's critical only one project has such permissions.
+
+[1]: https://github.com/operate-first/apps/tree/master/argocd/overlays/moc-infra/projects
+[2]: https://github.com/operate-first/apps/blob/master/argocd/overlays/moc-infra/projects/global_project.yaml
+[3]: https://github.com/operate-first/apps/blob/master/argocd/overlays/moc-infra/projects/global_project.yaml#L6
