@@ -8,13 +8,14 @@ resources:
   - cluster-logging.yaml
   - dashboard.yaml
   - datacatalog.yaml
-  - jupyterhub.yaml
   - jupyterhub-stage.yaml
+  - jupyterhub.yaml
   - kafka.yaml
+  - kubeflow.yaml
   - monitoring.yaml
-  - observatorium.yaml
   - observatorium-operator.yaml
+  - observatorium.yaml
   - odh-operator.yaml
   - prod-aicoe-ci.yaml
+  - slack-first.yaml
   - superset.yaml
-  - kubeflow.yaml
