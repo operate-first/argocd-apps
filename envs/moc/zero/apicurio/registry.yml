@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: registry
+spec:
+  destination:
+    name: zero
+    namespace: apicurio-apicurio-registry
+  project: apicurio
+  source:
+    path: manifests
+    repoURL: https://github.com/paoloantinori/apicurio-operate-first
+    targetRevision: master
+  syncPolicy:
+    syncOptions:
+    - Validate=false
