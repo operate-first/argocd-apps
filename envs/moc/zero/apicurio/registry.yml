@@ -10,7 +10,7 @@ spec:
   source:
     path: manifests
     repoURL: https://github.com/paoloantinori/apicurio-operate-first
-    targetRevision: master
+    targetRevision: HEAD
   syncPolicy:
     syncOptions:
     - Validate=false
