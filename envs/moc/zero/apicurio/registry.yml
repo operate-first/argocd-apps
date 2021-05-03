@@ -8,8 +8,8 @@ spec:
     namespace: apicurio-apicurio-registry
   project: apicurio
   source:
-    path: manifests
-    repoURL: https://github.com/paoloantinori/apicurio-operate-first
+    path: manifests/registry/overlay_limitador
+    repoURL: https://github.com/Apicurio/apicurio-operate-first
     targetRevision: HEAD
   syncPolicy:
     syncOptions:
