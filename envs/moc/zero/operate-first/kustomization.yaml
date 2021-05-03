@@ -11,3 +11,4 @@ resources:
   - odh-operator.yaml
   - prod-aicoe-ci.yaml
   - slack-first.yaml
+  - vector.yaml
