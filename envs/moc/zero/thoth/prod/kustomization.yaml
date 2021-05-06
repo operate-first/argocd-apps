@@ -27,6 +27,7 @@ resources:
 - prod-thoth-package-releases.yaml
 - prod-thoth-package-update.yaml
 - prod-thoth-prescription-sync.yaml
+- prod-thoth-purge-job.yaml
 - prod-thoth-qeb-hwt.yaml
 - prod-thoth-security-indicators.yaml
 - prod-thoth-sefkhet-abwy.yaml
