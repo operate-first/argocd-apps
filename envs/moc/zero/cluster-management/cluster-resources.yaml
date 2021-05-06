@@ -28,3 +28,4 @@ spec:
       selfHeal: true
     syncOptions:
     - Validate=false
+    - ApplyOutOfSyncOnly=true
