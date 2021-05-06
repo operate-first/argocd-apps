@@ -9,5 +9,6 @@ resources:
   - kubevirt-hyperconverged.yaml
   - local-storage.yaml
   - metallb.yaml
+  - moc-nfs-democratic-csi.yaml
 
 nameSuffix: -zero
