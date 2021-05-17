@@ -6,6 +6,7 @@ resources:
   - ci-prow-test-pods.yaml
   - ci-prow.yaml
   - cluster-logging.yaml
+  - jh-idle-culler.yaml
   - kubeflow.yaml
   - observatorium-operator.yaml
   - observatorium.yaml
