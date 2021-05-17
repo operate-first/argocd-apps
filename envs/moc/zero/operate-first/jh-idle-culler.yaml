@@ -1,0 +1,17 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: opf-jh-idle-culler
+spec:
+  destination:
+    name: zero
+    namespace: opf-jupyterhub
+  project: operate-first
+  source:
+    path: jupyterhub-idle-culler/overlays/moc/zero
+    repoURL: https://github.com/operate-first/apps.git
+    targetRevision: HEAD
+  syncPolicy:
+    syncOptions:
+    - Validate=false
