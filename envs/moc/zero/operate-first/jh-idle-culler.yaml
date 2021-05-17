@@ -19,4 +19,4 @@ spec:
     - group: apps.openshift.io
       kind: DeploymentConfig
       jsonPointers:
-        - /spec/jobTemplate/spec/template/spec/containers/0/image
+        - /spec/template/spec/containers/0/image
