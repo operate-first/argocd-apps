@@ -7,7 +7,7 @@ spec:
   project: thoth
   source:
     repoURL: 'https://github.com/thoth-station/thoth-application.git'
-    path: mi-scheduler/overlays/test
+    path: mi-scheduler/overlays/zero-test
     targetRevision: master
   destination:
     name: zero
