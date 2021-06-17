@@ -17,7 +17,6 @@ resources:
 - test-thoth-package-extract.yaml
 - test-thoth-package-releases.yaml
 - test-thoth-package-update.yaml
-- test-thoth-prescription-sync.yaml
 - test-thoth-security-indicators.yaml
 - test-thoth-solver.yaml
 - test-thoth-user-api.yaml
