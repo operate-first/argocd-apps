@@ -34,4 +34,5 @@ resources:
 - prod-thoth-security-indicators.yaml
 - prod-thoth-sefkhet-abwy.yaml
 - prod-thoth-solver.yaml
+- prod-thoth-triage-party.yaml
 - prod-thoth-user-api.yaml
