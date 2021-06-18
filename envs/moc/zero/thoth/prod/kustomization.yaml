@@ -19,6 +19,7 @@ resources:
 - prod-thoth-graph-sync-backend.yaml
 - prod-thoth-graph-sync-middletier.yaml
 - prod-thoth-investigator.yaml
+- prod-thoth-investigator-message-metrics.yaml
 - prod-thoth-kebechet.yaml
 - prod-thoth-management-api.yaml
 - prod-thoth-metrics-exporter.yaml
