@@ -15,6 +15,7 @@ resources:
 - prod-thoth-cve-update.yaml
 - prod-thoth-elyra-aidevsecops-tutorial.yaml
 - prod-thoth-graph-backup.yaml
+- prod-thoth-graph-metrics-exporter.yaml
 - prod-thoth-graph-refresh.yaml
 - prod-thoth-graph-sync-backend.yaml
 - prod-thoth-graph-sync-middletier.yaml
