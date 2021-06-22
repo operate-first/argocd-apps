@@ -17,4 +17,11 @@ spec:
       prune: true
       selfHeal: true
     syncOptions:
-    - Validate=false
+      - Validate=false
+  ignoreDifferences:
+    - group: ""
+      jsonPointers:
+        - /data/cert-issuer.types.acme.openshift.io
+      kind: ConfigMap
+      name: letsencrypt-live
+      namespace: acme-operator
