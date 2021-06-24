@@ -1,0 +1,20 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: prod-thoth-prescriptions-gh-release-notes
+spec:
+  project: thoth
+  source:
+    repoURL: "https://github.com/thoth-station/thoth-application.git"
+    path: prescriptions-gh-release-notes-job/overlays/zero-prod
+    targetRevision: HEAD
+  destination:
+    name: zero
+    namespace: thoth-backend-prod
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
+    syncOptions:
+      - Validate=false
