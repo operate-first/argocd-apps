@@ -3,3 +3,6 @@ kind: Kustomization
 namespace: argocd
 resources:
   - cluster-management
+  - operate-first
+
+nameSuffix: -infra

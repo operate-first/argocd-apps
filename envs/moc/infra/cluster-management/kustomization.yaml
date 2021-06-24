@@ -6,5 +6,3 @@ resources:
   - argocd-projects.yaml
   - cluster-resources.yaml
   - kubevirt-hyperconverged.yaml
-
-nameSuffix: -infra
