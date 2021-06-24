@@ -3,6 +3,7 @@ kind: Kustomization
 resources:
   - acm.yaml
   - alertreceiver.yaml
+  - argocd.yaml
   - argocd-projects.yaml
   - cluster-resources.yaml
   - kubevirt-hyperconverged.yaml
