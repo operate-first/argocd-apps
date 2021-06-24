@@ -18,7 +18,7 @@ spec:
       name: cluster
   project: cluster-management
   source:
-    path: cluster-scope/overlays/moc/curator
+    path: cluster-scope/overlays/moc/prod/curator
     repoURL: https://github.com/operate-first/apps.git
     targetRevision: HEAD
   syncPolicy:
