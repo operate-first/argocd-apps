@@ -1,19 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argocd-projects
+  name: argocd
 spec:
   destination:
     name: moc-infra
     namespace: argocd
   project: default
   source:
-    path: projects
-    repoURL: https://github.com/operate-first/argocd-apps.git
+    path: argocd/overlays/moc-infra
+    repoURL: https://github.com/operate-first/apps.git
     targetRevision: HEAD
   syncPolicy:
-    automated:
-      selfHeal: true
-      prune: true
     syncOptions:
-    - Validate=false
+      - Validate=false
