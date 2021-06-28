@@ -33,7 +33,6 @@ resources:
 - prod-thoth-prescriptions-gh-release-notes.yaml
 - prod-thoth-purge-job.yaml
 - prod-thoth-revsolver.yaml
-- prod-thoth-qeb-hwt.yaml
 - prod-thoth-security-indicators.yaml
 - prod-thoth-sefkhet-abwy.yaml
 - prod-thoth-solver.yaml
