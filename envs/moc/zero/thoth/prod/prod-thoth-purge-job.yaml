@@ -11,7 +11,7 @@ spec:
     targetRevision: master
   destination:
     name: zero
-    namespace: thoth-middletier-prod
+    namespace: thoth-backend-prod
   syncPolicy:
     automated:
       selfHeal: true
