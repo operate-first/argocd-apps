@@ -17,6 +17,7 @@ resources:
 - prod-thoth-graph-backup.yaml
 - prod-thoth-graph-metrics-exporter.yaml
 - prod-thoth-graph-refresh.yaml
+- prod-thoth-graph-schema-update.yaml
 - prod-thoth-graph-sync-backend.yaml
 - prod-thoth-graph-sync-middletier.yaml
 - prod-thoth-investigator.yaml
