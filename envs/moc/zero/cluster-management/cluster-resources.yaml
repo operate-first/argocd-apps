@@ -19,7 +19,7 @@ spec:
     name: cluster
   project: cluster-management
   source:
-    path: cluster-scope/overlays/moc/prod/zero
+    path: cluster-scope/overlays/prod/moc/zero
     repoURL: https://github.com/operate-first/apps.git
     targetRevision: HEAD
   syncPolicy:
