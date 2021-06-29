@@ -8,7 +8,7 @@ spec:
     namespace: open-cluster-management-agent
   project: cluster-management
   source:
-    path: cluster-scope/overlays/moc/infra
+    path: cluster-scope/overlays/moc/prod/infra
     repoURL: https://github.com/operate-first/apps.git
     targetRevision: HEAD
   syncPolicy:
