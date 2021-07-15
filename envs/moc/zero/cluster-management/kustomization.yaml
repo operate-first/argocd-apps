@@ -4,6 +4,7 @@ resources:
   - alertreceiver.yaml
   - ceph.yaml
   - cluster-resources.yaml
+  - dex.yaml
   - kfdefs.yaml
   - knative.yaml
   - kubevirt-hyperconverged.yaml
