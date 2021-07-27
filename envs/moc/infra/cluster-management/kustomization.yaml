@@ -8,3 +8,4 @@ resources:
   - cluster-resources.yaml
   - keycloak.yaml
   - kubevirt-hyperconverged.yaml
+  - moc-nfs-democratic-csi.yaml
