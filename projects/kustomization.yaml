@@ -4,11 +4,12 @@ resources:
   - apicurio-registry.yaml
   - b4mad.yaml
   - cluster-management.yaml
-  - operate-first.yaml
   - data-science.yaml
-  - thoth.yaml
-  - rekor.yaml
+  - global_project.yaml
   - lab-cicd.yaml
   - mesh-for-data.yaml
-  - global_project.yaml
+  - mocops.yaml
+  - operate-first.yaml
+  - rekor.yaml
+  - thoth.yaml
   - workshops.yaml
