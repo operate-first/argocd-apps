@@ -6,4 +6,5 @@ resources:
   - app-of-apps-infra.yaml
   - app-of-apps-rick.yaml
   - app-of-apps-zero.yaml
+  - app-of-apps-osc-cl1.yaml
   - workshops
