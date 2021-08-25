@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: opf-app-of-apps-ocp-prod
+spec:
+  destination:
+    namespace: argocd
+    name: moc-infra
+  project: operate-first
+  source:
+    path: envs/moc/ocp-prod
+    repoURL: https://github.com/operate-first/argocd-apps.git
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - Validate=false
+    - ApplyOutOfSyncOnly=true
