@@ -1,6 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-namespace: argocd
 resources:
-- cluster-management
-- external-secrets
+  - external-secrets.yaml
+
+nameSuffix: -ocp-prod
