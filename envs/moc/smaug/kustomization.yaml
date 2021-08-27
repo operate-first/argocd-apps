@@ -4,3 +4,4 @@ namespace: argocd
 nameSuffix: -smaug
 resources:
 - cluster-management
+- operate-first
