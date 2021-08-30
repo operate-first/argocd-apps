@@ -33,6 +33,8 @@ spec:
       server: 'https://api.odh-cl1.apps.os-climate.org:6443'
     - namespace: '*'
       server: 'https://api.smaug.na.operate-first.cloud:6443'
+    - namespace: '*'
+      server: 'https://api.devconfus2021.aws.operate-first.cloud:6443'
   sourceRepos:
     - '*'
   roles:
