@@ -5,3 +5,4 @@ resources:
   - ci-prow-test-pods.yaml
   - ci-prow.yaml
   - prod-aicoe-ci.yaml
+  - slack-first.yaml
