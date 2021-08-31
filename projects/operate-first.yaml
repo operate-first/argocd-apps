@@ -52,8 +52,6 @@ spec:
         - operate-first
   namespaceResourceWhitelist:
     - group: argoproj.io
-      kind: ApplicationSet
-    - group: argoproj.io
       kind: Application
     - group: logging.openshift.io
       kind: ClusterLogging
