@@ -8,6 +8,6 @@ spec:
     namespace: argocd
   project: operate-first
   source:
-    path: ml-prague-2021
+    path: apps
     repoURL: https://github.com/operate-first/workshop-apps.git
     targetRevision: HEAD
