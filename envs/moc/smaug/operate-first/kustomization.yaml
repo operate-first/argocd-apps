@@ -4,3 +4,4 @@ resources:
   - acme-operator.yaml
   - ci-prow-test-pods.yaml
   - ci-prow.yaml
+  - prod-aicoe-ci.yaml
