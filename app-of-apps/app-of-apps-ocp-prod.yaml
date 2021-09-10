@@ -6,7 +6,7 @@ spec:
   destination:
     namespace: argocd
     name: moc-infra
-  project: mocops
+  project: operate-first
   source:
     path: app-of-apps/envs/ocp-prod
     repoURL: https://github.com/CCI-MOC/moc-apps.git
