@@ -3,6 +3,8 @@ kind: AppProject
 metadata:
   name: global-project
 spec:
+  sourceRepos:
+    - 'https://github.com/operate-first/*'
   namespaceResourceWhitelist:
     - group: ''
       kind: Binding
