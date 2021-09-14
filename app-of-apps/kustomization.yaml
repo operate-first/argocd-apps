@@ -3,7 +3,6 @@ kind: Kustomization
 namespace: argocd
 resources:
   - app-of-apps-curator.yaml
-  - app-of-apps-devconfus2021.yaml
   - app-of-apps-infra.yaml
   - app-of-apps-ocp-prod.yaml
   - app-of-apps-osc-cl1.yaml
