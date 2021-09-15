@@ -8,7 +8,7 @@ spec:
     server: 'https://api.ocp-prod.massopen.cloud:6443'
   sourceRepos:
     - 'https://github.com/CCI-MOC/*'
-    - 'git@github.com:CCI-MOC/*'
+    - 'ssh://git@github.com/CCI-MOC/*'
   clusterResourceWhitelist:
   - group: '*'
     kind: '*'
