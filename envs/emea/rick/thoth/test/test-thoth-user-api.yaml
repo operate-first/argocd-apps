@@ -10,7 +10,7 @@ spec:
     path: user-api/overlays/test
     targetRevision: master
   destination:
-    name: zero
+    name: rick
     namespace: thoth-test-core
   syncPolicy:
     automated: {}
