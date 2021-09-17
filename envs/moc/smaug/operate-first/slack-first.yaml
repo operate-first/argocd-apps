@@ -5,11 +5,11 @@ metadata:
   name: opf-slack-first
 spec:
   destination:
-    name: zero
+    name: smaug
     namespace: opf-slack-first
   project: operate-first
   source:
-    path: slack-first/overlays/moc/zero
+    path: slack-first/overlays/moc/smaug
     repoURL: https://github.com/operate-first/apps.git
     targetRevision: HEAD
   syncPolicy:

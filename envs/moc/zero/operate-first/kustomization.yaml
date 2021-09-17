@@ -8,5 +8,4 @@ resources:
   - observatorium-operator.yaml
   - observatorium.yaml
   - odh-operator.yaml
-  - slack-first.yaml
   - vector.yaml
