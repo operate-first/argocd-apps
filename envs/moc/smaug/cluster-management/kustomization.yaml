@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   - cluster-resources.yaml
   - dex.yaml
+  - moc-nfs-democratic-csi.yaml
