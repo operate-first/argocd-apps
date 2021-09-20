@@ -7,7 +7,6 @@ resources:
   - data-science.yaml
   - global_project.yaml
   - lab-cicd.yaml
-  - mesh-for-data.yaml
   - mocops.yaml
   - operate-first.yaml
   - rekor.yaml
