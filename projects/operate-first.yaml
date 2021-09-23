@@ -9,32 +9,8 @@ spec:
     - group: kubeflow.org
       kind: Profile
   destinations:
-    - namespace: 'opf-*'
-      server: 'https://api.moc-infra.massopen.cloud:6443'
-    - namespace: 'argocd'
-      server: 'https://api.moc-infra.massopen.cloud:6443'
-    - namespace: 'acme-operator'
-      server: 'https://api.moc-infra.massopen.cloud:6443'
-    - namespace: 'opf-*'
-      server: 'https://api.zero.massopen.cloud:6443'
-    - namespace: 'tekton-pipelines'
-      server: 'https://api.zero.massopen.cloud:6443'
-    - namespace: 'openshift-logging'
-      server: 'https://api.zero.massopen.cloud:6443'
-    - namespace: 'kubeflow'
-      server: 'https://api.zero.massopen.cloud:6443'
-    - namespace: 'observatorium-operator'
-      server: 'https://api.zero.massopen.cloud:6443'
-    - namespace: 'opendatahub-operator'
-      server: 'https://api.zero.massopen.cloud:6443'
-    - namespace: 'acme-operator'
-      server: 'https://api.zero.massopen.cloud:6443'
-    - namespace: 'argocd'
-      server: 'https://api.odh-cl1.apps.os-climate.org:6443'
     - namespace: '*'
-      server: 'https://api.smaug.na.operate-first.cloud:6443'
-    - namespace: '*'
-      server: 'https://api.rick.emea.operate-first.cloud:6443'
+      server: '*'
   sourceRepos:
     - '*'
   roles:
