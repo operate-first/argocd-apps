@@ -4,5 +4,6 @@ resources:
   - cert-manager.yaml
   - cluster-resources.yaml
   - dex.yaml
+  - kfdefs.yaml
   - moc-nfs-democratic-csi.yaml
   - node-labeler.yaml
