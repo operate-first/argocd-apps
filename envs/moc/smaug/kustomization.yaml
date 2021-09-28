@@ -5,3 +5,4 @@ nameSuffix: -smaug
 resources:
 - cluster-management
 - operate-first
+- thoth
