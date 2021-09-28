@@ -2,8 +2,13 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
   - acme-operator.yaml
-  - ci-prow-test-pods.yaml
   - ci-prow.yaml
+  - ci-prow-test-pods.yaml
   - grafana.yaml
+  - jh-idle-culler.yaml
+  - jupyterhub.yaml
+  - kafka.yaml
+  - observatorium.yaml
   - prod-aicoe-ci.yaml
   - slack-first.yaml
+  - superset.yaml
